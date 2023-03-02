@@ -1,0 +1,295 @@
+:root {
+    /*(active input border)*/
+    --primay-Linear-gradient: #6448fe to #600594;
+    /* (input errors) */
+    --primary-Red: hsl(0, 100%, 66%);
+    /* neutals */
+    --White: hsl(0, 0%, 100%);
+    --Light-grayish-violet: hsl(270, 3%, 87%);
+    --Dark-grayish-violet: hsl(279, 6%, 55%);
+    --Very-dark-violet: hsl(278, 68%, 11%);
+
+}
+
+/* using your custom font */
+@font-face {
+    font-family: SpaceGrotesk;
+    src: url(SpaceGrotesk-VariableFont_wght.ttf);
+}
+
+body {
+    font-size: 18px;
+    font-weight: 500px;
+    background-color: var(--Light-grayish-violet);
+    display: block;
+    padding: 0;
+    margin: 0;
+    font-family: SpaceGrotesk;
+}
+
+input::placeholder {
+    text-align: left;
+    font-size: 12px;
+
+}
+
+.main-container {
+    background-color: var(--White);
+    display: flex;
+    width: 1040px;
+    height: 670px;
+    margin: 0 auto;
+}
+
+.card-display {
+    width: 240px;
+    background-image: url(./images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    padding: 20px 0 20px 110px;
+}
+
+
+
+.front-card-display {
+    width: 330px;
+    height: 180px;
+    color: var(--White);
+    background-image: url(./images/bg-card-front-2.png);
+    margin-bottom: 35px;
+    border: transparent;
+    margin-top: 120px;
+}
+
+.front-card-display img {
+    width: 60px;
+    padding: 15px 20px 0;
+
+}
+
+.front-card-display h3 {
+    text-align: left;
+    padding-top: 50px;
+    padding-left: 20px;
+    letter-spacing: 3.5px;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 10px;
+
+
+}
+
+.front-card-display h5 {
+    display: inline;
+    font-size: 12px;
+    padding: 20px;
+    letter-spacing: 3px;
+
+}
+
+.name-date-display {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    margin-right: 10px;
+    margin-top: -30px;
+}
+
+.front-card-display h5 span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    padding-left: 5px;
+}
+
+
+
+.back-card-display {
+    color: var(--White);
+    width: 330px;
+    height: 180px;
+    margin-left: 70px;
+    background-image: url(./images/bg-card-back-2.png);
+    border: transparent;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.back-card-display h5 {
+    font-size: 10px;
+    letter-spacing: 4px;
+    text-align: right;
+    padding-top: 65px;
+    padding-right: 40px;
+
+}
+
+.form-cont {
+    width: 45%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-left: 250px;
+}
+
+
+.card-details {
+    margin: 40px auto 0;
+    width: 420px;
+    margin-left: 3 0px;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-details label {
+    font-size: 10px;
+    font-weight: bolder;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.card-details input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 233px;
+    border: #DDBEBE 1px solid;
+}
+
+.card-details input:focus {
+    outline: none !important;
+    border: #600594 1px solid;
+}
+
+.numberError {
+    color: red;
+    font-size: 10px;
+    margin-top: -15px;
+    display: none;
+}
+
+#expiry-date label {
+    display: inline;
+    margin-right: 30px;
+}
+
+#expiry-date div {
+    margin-top: 3px;
+}
+
+#expiry-date input {
+    display: inline;
+    width: 30px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#expiry-date input::placeholder {
+    text-align: center;
+}
+
+#cvc {
+    margin-left: 40px;
+}
+
+input#cvc {
+    width: 80px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+input#cvc::placeholder {
+    text-align: left;
+}
+
+input.submit-btn {
+    width: 254px;
+    margin-top: 10px;
+    background-color: #220930;
+    color: var(--White);
+}
+
+input.submit-btn:hover {
+    background-color: #7e469c;
+}
+
+.error {
+    color: red;
+    margin-bottom: 30px;
+    position: relative;
+    font-size: 10px;
+    display: flex;
+    margin-top: -50px;
+}
+
+.monthYearError {
+    margin-right: 90px;
+    display: none;
+}
+
+.cvcError {
+    display: none;
+}
+
+.continue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 321px;
+    height: 35px;
+    border-radius: 10px;
+    color: hsl(270, 3%, 87%);
+    background-color: hsl(278, 68%, 11%);
+    margin-top: 40px;
+}
+
+.continue:hover {
+    background-color: hsl(278, 35%, 52%);
+}
+
+.thankyou {
+    font-size: 28%;
+    letter-spacing: 2px;
+    color: hsl(278, 68%, 11%);
+    margin-top: 40px;
+}
+
+.added {
+    font-size: 18px;
+    color: hsl(279, 6%, 55%);
+    margin-top: 16px;
+}
+
+.formCompleted {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    padding-right: 210px;
+}
+
+.center {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin: 20px auto;
+    color: var(--Very-dark-violet);
+
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    text-align: center;
+}
